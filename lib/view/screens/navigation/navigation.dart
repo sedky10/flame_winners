@@ -1,3 +1,4 @@
+import 'package:flame_winners/view/global/util/custom_fonts.dart';
 import 'package:flame_winners/view/screens/emergency/emergency_screen.dart';
 import 'package:flame_winners/view/screens/graphs/graphs_screen.dart';
 import 'package:flame_winners/view/screens/maps/map_screen.dart';
@@ -39,6 +40,15 @@ class _NavigationScreenState extends State<NavigationScreen> {
         color: ColorResources.whiteColor,
         child: SafeArea(
           child: Scaffold(
+            appBar: AppBar(
+              elevation: 0,
+              backgroundColor: Colors.white,
+              title: Text(
+                navigationProvider.listOfAppBarTittle[navigationProvider.curentIndex],
+                style: heading2Bold.copyWith(color: Colors.black),
+              ),
+              centerTitle: true,
+            ),
             bottomNavigationBar: BottomNavigationBar(
               selectedFontSize: 12,
               unselectedFontSize: 12,
@@ -89,6 +99,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
                 return _pages[index]['page'];
               },
               onPageChanged: (int index) {
+                navigationProvider.curentIndex=index;
                 navigationProvider.updateSelectedIndex(
                     index, _pageController, false);
               },
