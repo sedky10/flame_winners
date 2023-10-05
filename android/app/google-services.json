@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "737730827251",
+    "project_id": "flame-rangers",
+    "storage_bucket": "flame-rangers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737730827251:android:c30f578c5a98e136f1f886",
+        "android_client_info": {
+          "package_name": "com.example.flame_winners"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkZWeHL7FXiA1A-50LyijeWm7EShankgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
