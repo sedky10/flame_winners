@@ -16,9 +16,10 @@ class _AuthScreenState extends State<AuthScreen> {
       body: Container(
         width: MediaQuery.of(context).size.width,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomButton(
-              text: 'to home screen',
+              text: 'USER',
               height: 40,
               width: MediaQuery.of(context).size.width - 20,
               onTap: (){

@@ -60,25 +60,25 @@ class _NavigationScreenState extends State<NavigationScreen> {
                       padding: EdgeInsets.all(iconPadding),
                       child: Icon(Icons.maps_home_work_outlined),
                     ),
-                    label: 'الرئيسية'),
+                    label: 'Maps'),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.all(iconPadding),
                       child: Icon(Icons.graphic_eq_sharp),
                     ),
-                    label: 'الطلبات'),
+                    label: 'Graphs'),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.all(iconPadding),
                       child: Icon(Icons.emergency_share),
                     ),
-                    label: 'عربة التسوق'),
+                    label: 'Emergency'),
                 BottomNavigationBarItem(
                     icon: Padding(
                       padding: EdgeInsets.all(iconPadding),
                       child: Icon(Icons.more_horiz),
                     ),
-                    label: 'حسابي'),
+                    label: 'More'),
               ],
             ),
             body: PageView.builder(
