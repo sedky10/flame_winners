@@ -1,4 +1,6 @@
+import 'package:flame_winners/controller/providers/navigation_screen.dart';
 import 'package:flame_winners/view/global/theme/light_theme.dart';
+import 'package:flame_winners/view/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,6 +14,9 @@ void main() {
       providers: [
         ChangeNotifierProvider(
           create: (_) => ThemeProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => NavigationProvider(),
         ),
       ],
       child: const MyApp(),
@@ -43,20 +48,7 @@ class MyApp extends StatelessWidget {
           theme: light,
         );
       },
-      child: const Home(),
+      child: const SplashScreen(),
     );
-  }
-}
-class Home extends StatefulWidget {
-  const Home({super.key});
-
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }

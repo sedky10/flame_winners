@@ -4,7 +4,7 @@ import '../util/custom_fonts.dart';
 
 ThemeData light = ThemeData(
   scaffoldBackgroundColor: ColorResources.whiteColor,
-  fontFamily: 'Tajawal',
+  fontFamily: 'Rubic',
   brightness: Brightness.light,
   primaryColor: const Color(0xFFFFFFFF),
   highlightColor: const Color(0xFFFFFFFF),
@@ -13,7 +13,7 @@ ThemeData light = ThemeData(
     centerTitle: true,
     elevation: 1,
     titleTextStyle: heading2Bold.copyWith(
-      color: ColorResources.orangeNormalColor,
+      color: ColorResources.primaryColor,
     ),
   ),
 );
