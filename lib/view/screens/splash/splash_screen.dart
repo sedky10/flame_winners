@@ -1,4 +1,5 @@
-import 'package:flame_winners/view/screens/auth/auth_screen.dart';
+import 'package:flame_winners/view/global/util/images.dart';
+import 'package:flame_winners/view/screens/auth/login_screen.dart';
 import 'package:flutter/material.dart';
 import '../../global/util/colors.dart';
 
@@ -31,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen>
     return FutureBuilder(
       future: Future.delayed(Duration(milliseconds: 3000), () {
         Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => AuthScreen()));
+            context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }),
       builder: (context, snapshot) {
         return Container(
@@ -43,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen>
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: Image.asset(
-               ' ImageAssets.applogo',
+               AssetsImages.logoImage,
               ),
             ),
           ),
